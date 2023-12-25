@@ -4,16 +4,14 @@ import { getSortedList, getSortedList2 } from '../lib/data';
 
 export async function getStaticProps() {
     const allData = getSortedList();
-    const allData2 = getSortedList2()
     return {
         props: {
             allData,
-            allData2
         }
     };
 }
 
-export default function Home ( { allData, allData2 } ) {
+export default function Home ( { allData } ) {
     return (
             <main className="container-fluid">
                 <h1 className="text-center m-5 ">Meet Your Captains</h1>
